@@ -1,0 +1,135 @@
+header {
+  padding: 20px 0 15px;
+  background: #F8FAFF;
+  border-bottom: 1px solid #D9E1EE;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__item {
+  display: flex;
+  align-items: center;
+
+  &:nth-child(2) {
+    align-self: flex-end;
+  }
+}
+
+.header__logo + .header-nav {
+  margin-left: 30px;
+}
+
+.header-nav {
+  padding-bottom: 5px;
+}
+
+.header-nav__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header-nav__item + .header-nav__item {
+  margin-left: 25px;
+}
+
+.header-nav__link {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #000000;
+  &:hover {
+    color: #5785FF;
+  }
+}
+
+.header-phone:hover {
+  .header-phone__link, .header-phone__title{
+    color: #5785FF;
+  }
+}
+
+.footer-coll__nav:hover,
+.footer-coll__tel:hover,
+.privacy:hover {
+  color: #5785FF;
+}
+
+.header-phone {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.header-phone__link {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #000000;
+}
+
+.header-phone__title {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  color: #5B5E67;
+}
+
+.header-buttons {
+  display: flex;
+}
+
+.header-buttons__btn {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3766E4;
+  border: 1px solid #3766E4;
+  border-radius: 4px;
+  width: 160px;
+  height: 40px;
+  &--solid {
+    background: #3766E4;
+    color: #fff;
+  }
+}
+
+.header-buttons__btn:hover,
+.blog-tarif__btn:hover,
+.page-bottom__btn:hover,
+.sexth-btn--mode:hover {
+  color: #5785FF !important;
+  box-shadow: 0px 7px 20px rgba(45, 79, 170, 0.3);
+  border: 1px solid #5785FF;
+  background-color: #fff !important;
+}
+
+ .header-buttons__btn--solid:hover,
+ .second-bottom__btn:hover,
+ .sexth-btn:hover,
+ .second-slide__btn:hover,
+ .first-item__btn:hover {
+  background: #5785FF !important;
+  box-shadow: 0px 7px 20px rgba(45, 79, 170, 0.3);
+  color: #fff !important;
+
+}
+
+.header-buttons__btn + .header-buttons__btn {
+  margin-left: 25px;
+}
+
+.mobile__menu-box {
+  display: none;
+}
